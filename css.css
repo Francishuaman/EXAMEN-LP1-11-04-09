@@ -2,8 +2,37 @@
     text-align: center;
     margin: auto;   
 }
+@font-face {
+    font-family: myFirstFont;
+    src: url(font/Oswald-Bold.ttf);
+}
+@font-face {
+    font-family: mysecondFont;
+    src: url(font/GreatVibes-Regular.ttf);
+}
+@font-face {
+    font-family: mytreeFont;
+    src: url(font/BadScript-Regular.ttf);
+}
+.Bienvenida{
+    color: red;
+    font-family: mysecondFont;   
+    font-size: 50px;
+    padding: 150px 0px 0px 0px;
+}
+
+
+.titulo{
+    margin-top: 20px;
+    text-align: left;
+    font-family: mysecondFont;   
+    color: blue;
+    
+
+}
 body{
     background-image: url("car.jpg");
+    width: 100%;
 }
 #BIENVENIDA{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 

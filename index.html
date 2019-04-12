@@ -13,7 +13,7 @@
     <div class="contenedor">
         <div class="cabecera">
             <img src="logoexa.png" alt="" style="width:100px;float:left">
-            <h1>Sistema De Ventas - Exa01</h1>
+            <h2 class="titulo">Sistema De Ventas - Exa01</h2>
             <hr>
         </div>
         <nav>
@@ -28,7 +28,7 @@
             </ul>
         </nav>
         <aside style="display: block;" id="inicio">
-            <h1>Bienvenido al Sistema de Ventas</h1>
+            <h1 class="Bienvenida">Bienvenido al Sistema de Ventas</h1>
 
         </aside>
         <aside style="display: none;text-align: left" id="ventas">
@@ -36,17 +36,17 @@
             <hr>
             <label for="">Cliente</label>
             <input type="text" placeholder="Cliente..." id="Clientee"> <button onclick="mostrarCliente()"><img src="buscar.png" alt=""></button><br>
-            <button><img src="carrito.png" alt=""> Producto</button><br>
+            <button onclick="mostrarProducto()"><img src="carrito.png" alt="" > Producto</button><br>
 
-            <input type="text" placeholder="Producto...">
-            <input type="text" placeholder="Precio...">
-            <input type="text" placeholder="Cantidad..."><br>
-            <button>Enviar</button>
+            <input type="text" placeholder="Producto..." id="Productoo">
+            <input type="text" placeholder="Precio..." id="Precioo">
+            <input type="text" placeholder="Cantidad..." id="Cantidadd"><br>
+            <button onclick="enviarP()">Enviar</button>
         </aside>
         <aside style="display: none;" id="reportes">
             <h2 style="text-align:left;padding:15px;">REPORTES</h2>
             <hr>
-            <table class="customers"  >
+            <table class="customers" id="tablaReportes"  >
                 <tr>
                     <th>Venta</th>
                     <th>Producto</th>
@@ -57,30 +57,6 @@
                 </tr>
                 <tr>
                     <td>V001</td>
-                    <td>Mouse</td>
-                    <td>25</td>
-                    <td>10</td>
-                    <td>250</td>
-                    <td><img src="d.png" alt=""></td>
-                </tr>
-                <tr>
-                    <td>V002</td>
-                    <td>Mouse</td>
-                    <td>25</td>
-                    <td>10</td>
-                    <td>250</td>
-                    <td><img src="d.png" alt=""></td>
-                </tr>
-                <tr>
-                    <td>V003</td>
-                    <td>Mouse</td>
-                    <td>25</td>
-                    <td>10</td>
-                    <td>250</td>
-                    <td><img src="d.png" alt=""></td>
-                </tr>
-                <tr>
-                    <td>V004</td>
                     <td>Mouse</td>
                     <td>25</td>
                     <td>10</td>
@@ -144,32 +120,32 @@
 
                 </tr>
                 <tr>
-                    <td>P001</td>
+                    <td><input type="hidden" id="holap" value="Mouse">P001</td>
                     <td>Mouse</td>
-                    <td>25</td>
-                    <td>20</td>
-                    <td><img src="carrito.png" alt=""></td>
+                    <td><input type="hidden" id="holap2" value="25">25</td>
+                    <td><input type="hidden" id="holap3" value="20">20</td>
+                    <td><img src="carrito.png" alt="" onclick="guardarProducto()"></td>
                 </tr>
                 <tr>
-                   <td>P001</td>
+                   <td><input type="hidden" id="holap" value="Mouse">P002</td>
                     <td>Mouse</td>
-                    <td>25</td>
-                    <td>20</td>
-                    <td><img src="carrito.png" alt=""></td>
+                    <td><input type="hidden" id="holap2" value="25">25</td>
+                    <td><input type="hidden" id="holap3" value="20">20</td>
+                    <td><img src="carrito.png" alt="" onclick="guardarProducto()" ></td>
                 </tr>
                 <tr>
-                        <td>P001</td>
+                        <td><input type="hidden" id="holap" value="Mouse">P003</td>
                         <td>Mouse</td>
-                        <td>25</td>
-                        <td>20</td>
-                        <td><img src="carrito.png" alt=""></td>
+                        <td><input type="hidden" id="holap2" value="25">25</td>
+                        <td><input type="hidden" id="holap3" value="20">20</td>
+                        <td><img src="carrito.png" alt="" onclick="guardarProducto()"></td>
                 </tr>
                 <tr>
-                        <td>P001</td>
+                        <td><input type="hidden" id="holap" value="Mouse">P004</td>
                         <td>Mouse</td>
-                        <td>25</td>
-                        <td>20</td>
-                        <td><img src="carrito.png" alt=""></td>
+                        <td><input type="hidden" id="holap2" value="25">25</td>
+                        <td><input type="hidden" id="holap3" value="20">20</td>
+                        <td><img src="carrito.png" alt="" onclick="guardarProducto()"></td>
                 </tr>
             </table>
         </aside>
